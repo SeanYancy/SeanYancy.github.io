@@ -5,8 +5,8 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="2021/04/17/Hello-World/"/>
-      <url>2021/04/17/Hello-World/</url>
+      <link href="Hello-World/"/>
+      <url>Hello-World/</url>
       
         <content type="html"><![CDATA[<p>Hello world!</p>]]></content>
       
