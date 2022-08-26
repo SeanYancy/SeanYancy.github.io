@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sean, the sheep🐑</title>
+  
+  
+  <link href="https://seanyancy.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://seanyancy.github.io/"/>
+  <updated>2022-08-26T07:21:04.219Z</updated>
+  <id>https://seanyancy.github.io/</id>
+  
+  <author>
+    <name>Yan Zongxun</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>helloworld</title>
+    <link href="https://seanyancy.github.io/2022/08/26/helloworld/"/>
+    <id>https://seanyancy.github.io/2022/08/26/helloworld/</id>
+    <published>2022-08-26T07:14:42.000Z</published>
+    <updated>2022-08-26T07:21:04.219Z</updated>
+    
+    <content type="html"><![CDATA[<p>新博客再次开张，最后还是选择了最为轻量级以及省心的hexo与github pages这套你几乎不需要任何东西的组合。</p><span id="more"></span><p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;新博客再次开张，最后还是选择了最为轻量级以及省心的hexo与github pages这套你几乎不需要任何东西的组合。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="non-tech" scheme="https://seanyancy.github.io/categories/non-tech/"/>
+    
+    
+    <category term="notes" scheme="https://seanyancy.github.io/tags/notes/"/>
+    
+  </entry>
+  
+</feed>
