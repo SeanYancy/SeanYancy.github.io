@@ -9,7 +9,7 @@
     <atom:link href="https://seanyancy.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Fri, 26 Aug 2022 07:19:18 GMT</pubDate>
+    <pubDate>Fri, 26 Aug 2022 07:21:04 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,13 +22,13 @@
       
       
       
-      <content:encoded><![CDATA[<p>新博客再次开张，最后还是选择了最为轻量级以及省心的hexo与github pages这套你几乎不需要任何东西的组合。</p><span id="more"></span><p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#x69;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>新博客再次开张，最后还是选择了最为轻量级以及省心的hexo与github pages这套你几乎不需要任何东西的组合。</p><span id="more"></span><p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>]]></content:encoded>
       
       
-      <category domain="https://Seanyancy.github.io/categories/%E6%8A%80%E6%9C%AF%E6%97%A0%E5%85%B3/">技术无关</category>
+      <category domain="https://Seanyancy.github.io/categories/non-tech/">non-tech</category>
       
       
-      <category domain="https://Seanyancy.github.io/tags/%E9%9A%8F%E6%9C%BA/">随机</category>
+      <category domain="https://Seanyancy.github.io/tags/notes/">notes</category>
       
       
       <comments>https://seanyancy.github.io/2022/08/26/helloworld/#disqus_thread</comments>
