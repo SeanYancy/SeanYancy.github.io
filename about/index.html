@@ -26,7 +26,7 @@
 <meta property="og:description" content="Hi,👋My name is Yan Zongxun, you can call me Sean. I am currently studying in The Hong Kong University of Science and Technology as TPG Student. You can contact me with email. Recommend Websites list">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-08-26T06:25:47.000Z">
-<meta property="article:modified_time" content="2022-09-01T05:13:47.385Z">
+<meta property="article:modified_time" content="2022-09-02T04:43:01.245Z">
 <meta property="article:author" content="Yan Zongxun">
 <meta name="twitter:card" content="summary">
 
@@ -215,7 +215,7 @@
 <p>I am currently studying in <a target="_blank" rel="noopener" href="https://hkust.edu.hk/">The Hong Kong University of Science and Technology</a> as TPG Student.</p>
 <p>You can contact me with email.</p>
 <h1 id="Recommend-Websites-list"><a href="#Recommend-Websites-list" class="headerlink" title="Recommend Websites list"></a>Recommend Websites list</h1><ol>
-<li>(SuperMemo Guru)[<a target="_blank" rel="noopener" href="https://supermemo.guru/wiki/SuperMemo_Guru]">https://supermemo.guru/wiki/SuperMemo_Guru]</a> | 一个介绍如何过好自己生活的网站，文章都是由各个领域的专家撰写质量非常高</li>
+<li>(SuperMemo Guru)[<a target="_blank" rel="noopener" href="https://supermemo.guru/wiki/SuperMemo_Guru]">https://supermemo.guru/wiki/SuperMemo_Guru]</a> | 一个介绍如何过好自己生活的网站，文章通常是由各个领域的专家撰写质量非常高。（不过也导致完整看完一篇文章需要很长一段时间。）</li>
 </ol>
 
       </div>
@@ -232,6 +232,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -510,6 +511,26 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : 'a5fe3f56f267aafde215',
+      clientSecret: '8f0431b1c36f7966fb1f6f0a337022b4ed3e68ad',
+      repo        : 'SeanYancy/SeanYancy.github.io',
+      owner       : 'SeanYancy',
+      admin       : ['SeanYancy'],
+      id          : '3be7aa98d992907175cbd79c194399f2',
+        language: 'en',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
