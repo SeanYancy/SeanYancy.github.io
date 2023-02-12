@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Works in HCI</title>
+    <url>/2023/02/12/Works-in-HCI/</url>
+    <content><![CDATA[<p><img src="/Works-in-HCI/Final.png" alt="Works1"></p>
+]]></content>
+      <tags>
+        <tag>non-tech</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>helloworld</title>
     <url>/2022/08/26/helloworld/</url>
     <content><![CDATA[<p>新博客再次开张，最后还是选择了最为轻量级以及省心的hexo与github pages这套你几乎不需要任何东西的组合。</p>
 <span id="more"></span>
-<p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#109;">&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#109;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>
+<p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;">&#103;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#104;&#x75;&#x62;&#46;&#x63;&#x6f;&#x6d;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>
 ]]></content>
       <categories>
         <category>non-tech</category>
