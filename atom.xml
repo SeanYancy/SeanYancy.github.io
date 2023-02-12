@@ -6,7 +6,7 @@
   <link href="https://seanyancy.github.io/atom.xml" rel="self"/>
   
   <link href="https://seanyancy.github.io/"/>
-  <updated>2023-02-12T07:07:49.948Z</updated>
+  <updated>2023-02-12T07:33:23.557Z</updated>
   <id>https://seanyancy.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://seanyancy.github.io/2023/02/12/Works-in-HCI/"/>
     <id>https://seanyancy.github.io/2023/02/12/Works-in-HCI/</id>
     <published>2023-02-12T06:51:40.000Z</published>
-    <updated>2023-02-12T07:07:49.948Z</updated>
+    <updated>2023-02-12T07:33:23.557Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="The-Bad-design"><a href="#The-Bad-design" class="headerlink" title="The Bad design"></a>The Bad design</h1><p>HUAWEI Matebook X Pro has a very bad camera design, please look my following poster.<br><img src="/Works-in-HCI/Final.png"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="The-Bad-design"><a href="#The-Bad-design" class="headerlink" title="The Bad design"></a>The Bad design</h1><p>HUAWEI Matebook X Pro has a very bad camera design, please look my following poster.  </p>]]></content>
     
     
       
@@ -45,7 +45,7 @@
     <published>2022-08-26T07:14:42.000Z</published>
     <updated>2022-08-26T07:21:04.219Z</updated>
     
-    <content type="html"><![CDATA[<p>新博客再次开张，最后还是选择了最为轻量级以及省心的hexo与github pages这套你几乎不需要任何东西的组合。</p><span id="more"></span><p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>]]></content>
+    <content type="html"><![CDATA[<p>新博客再次开张，最后还是选择了最为轻量级以及省心的hexo与github pages这套你几乎不需要任何东西的组合。</p><span id="more"></span><p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#109;">&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#109;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;新博客再次开张，最后还是选择了最为轻量级以及省心的hexo与github pages这套你几乎不需要任何东西的组合。&lt;/p&gt;</summary>
