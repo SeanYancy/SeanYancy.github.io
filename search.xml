@@ -14,13 +14,32 @@
     <url>/2022/08/26/helloworld/</url>
     <content><![CDATA[<p>新博客再次开张，最后还是选择了最为轻量级以及省心的hexo与github pages这套你几乎不需要任何东西的组合。</p>
 <span id="more"></span>
-<p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#111;&#109;">&#103;&#x69;&#116;&#64;&#x67;&#105;&#116;&#104;&#117;&#98;&#46;&#99;&#111;&#109;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>
+<p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#46;&#99;&#x6f;&#109;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>
 ]]></content>
       <categories>
         <category>non-tech</category>
       </categories>
       <tags>
         <tag>notes</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>代码随想录训练营 Day 01 / 60</title>
+    <url>/2023/04/19/%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95%E8%AE%AD%E7%BB%83%E8%90%A5-Day-01-60/</url>
+    <content><![CDATA[<p>今日任务:<br>[x] <a href="https://programmercarl.com/%E6%95%B0%E7%BB%84%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html">数组基础知识</a><br>[x] <a href="https://leetcode.cn/problems/binary-search/">LC-704</a><br>[x] <a href="https://leetcode.cn/problems/remove-element/">LC-27</a></p>
+<h1 id="数据理论基础"><a href="#数据理论基础" class="headerlink" title="数据理论基础"></a>数据理论基础</h1><p>Carl哥主要介绍了一些数据的基础知识和C++中数组的一些操作。那么我来总结一下Java中数组的操作。<br><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html">参考连接</a><br>首先需要注意的是在Java中数组一旦被创建长度就固定了。  </p>
+<ol>
+<li><p>数组创建  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] anArray; <span class="comment">//声明一个数组</span></span><br><span class="line"><span class="type">int</span>[] anArray = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">10</span>]; <span class="comment">//创建一个长度为10的数组</span></span><br><span class="line"><span class="type">int</span>[] arr = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line"><span class="type">int</span>[] arr = <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br></pre></td></tr></table></figure></li>
+<li><p>深拷贝与浅拷贝  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] arr = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line"><span class="type">int</span>[] arr2 = arr;</span><br><span class="line">arr2[<span class="number">0</span>] = <span class="number">4</span>;</span><br><span class="line">System.out.println(arr[<span class="number">0</span>]); <span class="comment">// 4</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span>[] arr = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line"><span class="type">int</span>[] arr2 = Arrays.copyOf(arr, arr.length);</span><br><span class="line">arr2[<span class="number">0</span>] = <span class="number">4</span>;</span><br><span class="line">System.out.println(arr[<span class="number">0</span>]); <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// using System.arraycopy</span></span><br><span class="line"><span class="type">int</span>[] arr = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line"><span class="type">int</span>[] arr2 = <span class="keyword">new</span> <span class="title class_">int</span>[arr.length];</span><br><span class="line">System.arraycopy(arr, <span class="number">0</span>, arr2, <span class="number">0</span>, arr.length);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Arrays类  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[] arr = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line">System.out.println(Arrays.toString(arr)); <span class="comment">// [1, 2, 3]</span></span><br><span class="line">System.out.println(Arrays.equals(arr, arr2)); <span class="comment">// true</span></span><br><span class="line">System.out.println(Arrays.binarySearch(arr, <span class="number">2</span>)); <span class="comment">// 1</span></span><br><span class="line"><span class="comment">// fill</span></span><br><span class="line"><span class="type">int</span>[] arr = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">10</span>];</span><br><span class="line">Arrays.fill(arr, <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// sort</span></span><br><span class="line"><span class="type">int</span>[] arr = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line">Arrays.sort(arr);</span><br><span class="line"></span><br><span class="line"><span class="comment">// copyOfRange</span></span><br><span class="line"><span class="type">int</span>[] arr = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;;</span><br><span class="line"><span class="type">int</span>[] arr2 = Arrays.copyOfRange(arr, <span class="number">0</span>, <span class="number">2</span>);</span><br><span class="line">System.out.println(Arrays.toString(arr2)); <span class="comment">// [1, 2]</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="LC-704"><a href="#LC-704" class="headerlink" title="LC-704"></a>LC-704</h1><h1 id="LC-27"><a href="#LC-27" class="headerlink" title="LC-27"></a>LC-27</h1>]]></content>
+      <tags>
+        <tag>leetcode</tag>
       </tags>
   </entry>
 </search>
