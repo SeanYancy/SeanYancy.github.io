@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Kong Fanzi</title>
+    <url>/2023/05/02/Kong-Fanzi/</url>
+    <content><![CDATA[<h1 id="Nihao"><a href="#Nihao" class="headerlink" title="Nihao"></a>Nihao</h1>]]></content>
+  </entry>
+  <entry>
     <title>Works in HCI</title>
     <url>/2023/02/12/Works-in-HCI/</url>
     <content><![CDATA[<h1 id="The-Bad-design"><a href="#The-Bad-design" class="headerlink" title="The Bad design"></a>The Bad design</h1><p>HUAWEI Matebook X Pro has a very bad camera design, please look my following poster.  </p>
@@ -14,7 +19,7 @@
     <url>/2022/08/26/helloworld/</url>
     <content><![CDATA[<p>新博客再次开张，最后还是选择了最为轻量级以及省心的hexo与github pages这套你几乎不需要任何东西的组合。</p>
 <span id="more"></span>
-<p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#x6d;">&#x67;&#105;&#116;&#64;&#103;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#x6f;&#x6d;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>
+<p>如有同样建站需求请移步 <a href="https://zhuanlan.zhihu.com/p/33616481">知乎</a><br>遇到一个坑：<br>坑：github的repo链接请填写<a href="mailto:&#103;&#105;&#116;&#x40;&#103;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#103;&#105;&#116;&#x40;&#103;&#105;&#116;&#x68;&#117;&#x62;&#x2e;&#x63;&#111;&#x6d;</a>:SeanYancy&#x2F;SeanYancy.github.io.git，请勿填写https链接<br>没了！</p>
 ]]></content>
       <categories>
         <category>non-tech</category>
@@ -63,6 +68,28 @@
 
 <h1 id="每日一题-LC-1043"><a href="#每日一题-LC-1043" class="headerlink" title="每日一题 LC-1043"></a>每日一题 LC-1043</h1><p>遇到好多遍了有点难度   </p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">maxSumAfterPartitioning</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> k)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] dp = <span class="keyword">new</span> <span class="title class_">int</span>[arr.length + <span class="number">1</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; dp.length; i++) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> arr[i - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i; j &gt;= <span class="number">0</span> &amp;&amp; j &gt;= i - k; j--) &#123;</span><br><span class="line">                dp[i] = Math.max(dp[i], dp[j] + max * (i - j));</span><br><span class="line">                <span class="keyword">if</span> (j &gt; <span class="number">0</span>)</span><br><span class="line">                    max = Math.max(max, arr[j - <span class="number">1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> dp[arr.length];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>leetcode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>代码随想录训练营 Day 02 / 60</title>
+    <url>/2023/04/20/%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95%E8%AE%AD%E7%BB%83%E8%90%A5-Day-02-60/</url>
+    <content><![CDATA[<p><strong>今日任务</strong></p>
+<ul>
+<li>[] 每日一题（LC-1187）</li>
+<li>[] LC-977 有序数组的平方</li>
+<li>[] LC-209 长度最小的子数组</li>
+<li>[] LC-59 螺旋数组II</li>
+</ul>
+<h1 id="每日一题LC-1187"><a href="#每日一题LC-1187" class="headerlink" title="每日一题LC-1187"></a>每日一题LC-1187</h1><h2 id="LC-300"><a href="#LC-300" class="headerlink" title="LC-300"></a>LC-300</h2><p>做每日一题前先做了一道<a href="https://leetcode.cn/problems/longest-increasing-subsequence/solutions/">LC-300</a>, 因为LC-1187的题解说这道题可以用300的方法。<br>这道题DP不是最优解要n^2的时间复杂度，主要思想是<strong>DP记录以i元素结尾最长的严格递增子序列长度</strong>，这样遍历每个元素如果比之前的大就比较一下+1后和之前是不是最大的。最近很多这种题目啊，DP是检查<strong>以i为结尾的xxxx</strong>，可以整理一下  </p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">lengthOfLIS</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] dp = <span class="keyword">new</span> <span class="title class_">int</span>[nums.length];</span><br><span class="line">        Arrays.fill(dp, <span class="number">1</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">maxVal</span> <span class="operator">=</span> dp[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt;= i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[j] &lt; nums[i]) &#123;</span><br><span class="line">                    dp[i] = Math.max(dp[i], dp[j] + <span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            maxVal = Math.max(dp[i], maxVal);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> maxVal;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>贪心做法，使用了O(n)的查找方式，如果用二分的话可以更加快<br>主要思路就是让ans数组中尽可能小</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">lengthOfLIS</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (nums.length == <span class="number">0</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span>[] ans = <span class="keyword">new</span> <span class="title class_">int</span>[nums.length + <span class="number">1</span>]; <span class="comment">// 每个元素表示子序列长度为i时子序列中元素的最小值</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">len</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        ans[<span class="number">1</span>] = nums[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] &gt; ans[len]) &#123;</span><br><span class="line">                ans[++len] = nums[i];</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">index</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> len; j &gt; <span class="number">0</span>; j--) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (ans[j] &lt; nums[i]) &#123;</span><br><span class="line">                        index = j;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                ans[index + <span class="number">1</span>] = nums[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> len;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="LC-1187-使数组严格递增"><a href="#LC-1187-使数组严格递增" class="headerlink" title="LC-1187 使数组严格递增"></a>LC-1187 使数组严格递增</h2><p><a href="https://leetcode.cn/problems/make-array-strictly-increasing/">题目链接</a></p>
+]]></content>
       <tags>
         <tag>leetcode</tag>
       </tags>
